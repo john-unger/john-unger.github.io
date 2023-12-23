@@ -1,0 +1,24 @@
+{
+  "name": "john-unger.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test was successful!\" && exit 0",
+    "build": "tailwindcss -o dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/john-unger/john-unger.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/john-unger/john-unger.github.io/issues"
+  },
+  "homepage": "https://github.com/john-unger/john-unger.github.io#readme",
+  "dependencies": {
+    "daisyui": "^4.4.23",
+    "tailwindcss": "^3.4.0"
+  }
+}
