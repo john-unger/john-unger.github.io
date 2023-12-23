@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/john-unger/john-unger.github.io#readme",
   "dependencies": {
-    "daisyui": "^4.4.23",
     "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "daisyui": "^4.4.23"
   }
 }
