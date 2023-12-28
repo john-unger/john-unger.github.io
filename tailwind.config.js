@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{html,js}',
     './pages/**/*.{html,js}',
     './index.html',
+    './main.js',
   ],
   theme: {
     extend: {},
@@ -22,5 +23,28 @@ module.exports = {
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
+  safelist: [
+    // My common css classes used throughout the page
+    'card',
+    'card-bordered',
+    'bg-base-100',
+    'shadow-lg',
+    'hover:shadow-xl',
+    'transition-shadow',
+    'duration-300',
+    'ease-in-out',
+    'card-body',
+    'p-6',
+    'card-title',
+    'text-xl',
+    'mb-2',
+    'font-semibold',
+    'mb-1',
+    'text-sm',
+    'grid',
+    'md:grid-cols-2',
+    'lg:grid-cols-3',
+    'gap-6',
+  ],
 }
 
