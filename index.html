@@ -8,53 +8,25 @@
 
     <link rel="icon" type="image/x-icon" href="static/favicon.ico">
     <link href="dist/style.css" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Main Container -->
-    <div class="container mx-auto px-4 py-10">
+    <div class="container mx-auto px-4 py-12">
         <!-- Title and Description -->
-        <header class="text-center mb-10">
-            <h1 class="text-4xl font-bold text-gray-800 mb-3">John Unger</h1>
-            <p class="text-lg text-gray-600">
-                Hello, my name is John Unger, and I am ambitious to steward our computer's function for the best as a Software Developer. <br>
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold mb-4">John Unger</h1>
+            <p class="text-xl leading-relaxed mb-4">
+                Hello, my name is John Unger, and I am ambitious to steward our computer's function for the best as a Software Developer.<br>
                 A conscientious and creative thinking software developer for almost 5 years with a strong work ethic and positive attitude. I learn new material quickly and possess excellent analytical abilities. Enjoy helping others achieve their goals and sharing knowledge.
             </p>
-            <button class="btn btn-primary">Test Button</button>
+            <button class="btn btn-primary hover:bg-blue-700">Test Button</button>
         </header>
 
         <!-- Job Experience Cards -->
-        <section>
-            <div class="grid md:grid-cols-3 gap-4">
-
-                <!-- Card 1 -->
-                <div class="card card-bordered bg-white">
-                    <div class="card-body">
-                        <h2 class="card-title">Software Engineer II</h2>
-                        <p>Brightspot, 2 years</p>
-                        <p>Brief description of your role and responsibilities. Highlight key achievements or skills gained.</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card card-bordered bg-white">
-                    <div class="card-body">
-                        <h2 class="card-title">Job Title 2</h2>
-                        <p>Company Name, Duration</p>
-                        <p>Brief description of your role and responsibilities. Highlight key achievements or skills gained.</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card card-bordered bg-white">
-                    <div class="card-body">
-                        <h2 class="card-title">Job Title 3</h2>
-                        <p>Company Name, Duration</p>
-                        <p>Brief description of your role and responsibilities. Highlight key achievements or skills gained.</p>
-                    </div>
-                </div>
-
-            </div>
+        <section id="cards-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cards will be injected here by JavaScript -->
         </section>
     </div>
 
