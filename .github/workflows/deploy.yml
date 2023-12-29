@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
@@ -9,26 +9,25 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Install Node.js
+    - name: Set up Node.js
       uses: actions/setup-node@v1
       with:
         node-version: '20'  # version I am using
 
-    - name: Install dependencies
+    - name: Install Dependencies
       run: npm install
       working-directory: ./my-portfolio
 
-    - name: Build
+    - name: Build Project
       run: npm run build
       working-directory: ./my-portfolio
 
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages  # branch to deploy to
-        FOLDER: my-portfolio/build  # folder to deploy
-        CLEAN: true
+        branch: main  # Pushes the build artifacts to the main branch
+        folder: my-portfolio/build  # The folder you want to deploy
+        target-folder: build  # Target folder on the main branch
