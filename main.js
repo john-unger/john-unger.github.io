@@ -1,40 +1,55 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const jobs = [
-      {
-        title: 'Software Engineer II',
-        company: 'Brightspot',
-        duration: '2 years',
-        description: 'Managed end-to-end software development lifecycle and contributed to all phases of the software development process.'
-      },
-      {
-        title: 'Full Stack Developer',
-        company: 'Tech Innovations Inc.',
-        duration: '1 year',
-        description: 'Developed and maintained web applications using a variety of coding languages and frameworks.'
-      },
-      {
-        title: 'Junior Software Developer',
-        company: 'Startup Hub',
-        duration: '1.5 years',
-        description: 'Participated in the design and creation of scalable software, writing clean, functional code on the front- and back-end.'
-      }
-    ];
+document.addEventListener("DOMContentLoaded", function () {
+  const jobs = [
+    {
+      title: 'Software Engineer II',
+      company: 'Brightspot',
+      duration: '2 years',
+      logo: 'static/brightspot_logo.webp',
+      description: [
+        'Managed end-to-end software development lifecycle.',
+        'Contributed to all phases of the software development process.'
+      ]
+    },
+    {
+      title: "Full Stack Developer",
+      company: "Tech Innovations Inc.",
+      duration: "1 year",
+      logo: "static/vs_logo_lg-centered.png", // Replace with actual logo path
+      description: [
+        "Developed and maintained web applications.",
+        "Used a variety of coding languages and frameworks.",
+      ],
+    },
+    {
+      title: "Junior Software Developer",
+      company: "Startup Hub",
+      duration: "1.5 years",
+      logo: "path/to/startup-hub-logo.png", // Replace with actual logo path
+      description: [
+        "Participated in the design and creation of scalable software.",
+        "Wrote clean, functional code on the front- and back-end.",
+      ],
+    },
+  ];
 
-    const cardsContainer = document.querySelector('#cards-container');
-    jobs.forEach(job => {
-      cardsContainer.appendChild(createJobCard(job));
+  const cardsContainer = document.querySelector('#cards-container');
+  const template = document.querySelector('#job-card-template').content;
+  const fragment = document.createDocumentFragment();
+
+  jobs.forEach(job => {
+    const cardClone = document.importNode(template, true);
+    cardClone.querySelector('img').src = job.logo;
+    cardClone.querySelector('img').alt = `${job.company} logo`;
+    cardClone.querySelector('.card-title').textContent = job.title;
+    cardClone.querySelector('.text-base-content').textContent = `${job.company}, ${job.duration}`;
+    const ul = cardClone.querySelector('ul');
+    job.description.forEach(point => {
+      const li = document.createElement('li');
+      li.textContent = point;
+      ul.appendChild(li);
     });
-
-    function createJobCard(job) {
-      const card = document.createElement('div');
-      card.className = 'card card-bordered bg-base-100 shadow-xl';
-      card.innerHTML = `
-        <div class="card-body">
-          <h2 class="card-title text-xl">${job.title}</h2>
-          <p class="text-base-content">${job.company}, ${job.duration}</p>
-          <p class="text-base">${job.description}</p>
-        </div>
-      `;
-      return card;
-    }
+    fragment.appendChild(cardClone);
   });
+
+  cardsContainer.appendChild(fragment);
+});
