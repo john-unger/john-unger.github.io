@@ -29,6 +29,5 @@ jobs:
     - name: Deploy To Github Page 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: main  # Pushes the build artifacts to the main branch
         folder: my-portfolio/build # The folder the action should deploy.
         target-folder: build
