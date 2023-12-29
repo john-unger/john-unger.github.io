@@ -19,14 +19,16 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      working-directory: ./my-portfolio
 
     - name: Build
       run: npm run build
+      working-directory: ./my-portfolio
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages  # The branch the action should deploy to.
-        FOLDER: build  # The folder the action should deploy.
-        CLEAN: true  # Automatically remove deleted files from the deploy branch
+        BRANCH: gh-pages  # branch to deploy to
+        FOLDER: my-portfolio/build  # folder to deploy
+        CLEAN: true
