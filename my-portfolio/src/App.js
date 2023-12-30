@@ -18,7 +18,7 @@ function App() {
         title: 'Software Engineer II',
         company: 'Brightspot',
         duration: '2 years',
-        logo: `${process.env.PUBLIC_URL}/brightspot_logo.webp`,
+        logo: `brightspot_logo.webp`,
         description: [
           'Managed end-to-end software development lifecycle.',
           'Contributed to all phases of the software development process.'
@@ -28,7 +28,7 @@ function App() {
         title: 'Application Programmer',
         company: 'Vistashare LLC',
         duration: '3 years',
-        logo: `${process.env.PUBLIC_URL}/vs_logo_lg-centered.png`,
+        logo: `vs_logo_lg-centered.png`,
         description: [
           'Managed end-to-end software development lifecycle.',
           'Contributed to all phases of the software development process.'
