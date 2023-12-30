@@ -1,4 +1,5 @@
 import React from 'react';
+import imagePath from './Utils';
 
 function ExperienceCard({ data }) {
   return (
@@ -7,7 +8,7 @@ function ExperienceCard({ data }) {
         <div className="flex items-center space-x-4 mb-4">
           <div className="avatar">
             <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              <img src={data.logo} alt={`${data.company} logo`} />
+              <img src={imagePath( data.logo )} alt={`${data.company} logo`} />
             </div>
           </div>
           <h3 className="card-title text-xl">{data.title}</h3>
