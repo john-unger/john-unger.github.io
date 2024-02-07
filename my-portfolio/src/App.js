@@ -7,9 +7,9 @@ import ExperienceSection from './components/ExperienceSection';
 function App() {
   // Define the data for Skills and Experiences
   const skills = {
-    "Programming Languages": ["Java", "Python", "JavaScript", "JQuery", "C"],
-    "Backends & Databases": ["Node.js", "MySQL", "MongoDB"],
-    "Tools": ["GitHub", "Docker", "Jira"]
+    "Programming Languages": ["Java", "Python", "C", "JavaScript", "JQuery"],
+    "Backends & Databases": ["SQL", "Postgres", "MySQL", "Docker", "Dari", "Django", "SpringBoot",],
+    "Tools": ["GitHub", "Agile", "Jira"]
   };
 
   const experiences = {
@@ -30,32 +30,42 @@ function App() {
         duration: '3 years',
         logo: `vs_logo_lg-centered.png`,
         description: [
-          'Managed end-to-end software development lifecycle.',
-          'Contributed to all phases of the software development process.'
+          'Design and develop new functionality with RESTful API calls and object-oriented programming in Django according to priorities with the most important features',
+          'Maintained legacy code, refactored common customer uses, and optimized queries for a more seamless user experience',
+          'Pursued a self-explanatory user interface in functional design sessions',
+          'Guaranteeing common functionality with continuous improvement of an end-to-end testing framework using selenium, including reports, parallel and distributed functionality, and more'
         ]
       },
     ],
     "Education": [
       {
-        title: 'Bachelor of Science in Computer Science',
-        company: 'University of Technology',
-        duration: '2015 - 2019',
-        logo: '',
+        title: 'Master in Business Administration',
+        company: 'The Master\'s University',
+        duration: 'Graduated 2023',
+        logo: 'MastersU_Seal.png',
         description: [
-          'Specialized in software engineering.',
-          'Graduated with honors.'
+          'Gained a foundation in business practice'
+        ]
+      },
+      {
+        title: 'Bachelor of Science in Computer Science',
+        company: 'James Madison University',
+        duration: 'Graduated 2017',
+        logo: 'JMU-block-RGB-purple-square.png',
+        description: [
         ]
       },
     ],
     "Volunteering": [
       {
-        title: 'Community Tech Teacher',
-        company: 'Local Library',
-        duration: '2018 - Present',
-        logo: '',
+        title: 'Media Consultant / Operator',
+        company: 'Crosslink Community Church',
+        duration: '2011 - 2020',
+        logo: 'crosslink-logo.png',
         description: [
-          'Conducted weekend tech workshops.',
-          'Focused on basic programming skills.'
+          'Prepare, and direct presentations and cameras live with songs and sermons',
+          'On-the-spot troubleshoot software and hardware problems that arise for a seamless event',
+          'Work as part of a team each week to maintain, produce, and teach the service'
         ]
       },
     ]
