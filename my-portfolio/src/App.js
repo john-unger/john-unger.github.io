@@ -42,7 +42,7 @@ function App() {
         title: 'Master in Business Administration',
         company: 'The Master\'s University',
         duration: 'Graduated 2023',
-        logo: '',
+        logo: 'MastersU_Seal.png',
         description: [
           'Gained a foundation in business practice'
         ]
@@ -51,22 +51,21 @@ function App() {
         title: 'Bachelor of Science in Computer Science',
         company: 'James Madison University',
         duration: 'Graduated 2017',
-        logo: '',
+        logo: 'JMU-block-RGB-purple-square.png',
         description: [
-          'Specialized in software engineering.',
-          'Graduated with honors.'
         ]
       },
     ],
     "Volunteering": [
       {
-        title: 'Community Tech Teacher',
-        company: 'Local Library',
-        duration: '2018 - Present',
-        logo: '',
+        title: 'Media Consultant / Operator',
+        company: 'Crosslink Community Church',
+        duration: '2011 - 2020',
+        logo: 'crosslink-logo.png',
         description: [
-          'Conducted weekend tech workshops.',
-          'Focused on basic programming skills.'
+          'Prepare, and direct presentations and cameras live with songs and sermons',
+          'On-the-spot troubleshoot software and hardware problems that arise for a seamless event',
+          'Work as part of a team each week to maintain, produce, and teach the service'
         ]
       },
     ]
