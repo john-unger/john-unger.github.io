@@ -1,5 +1,5 @@
 # john-unger.github.io
-This is responsible for rendering my personal page
+This is responsible for rendering my personal page https://john-unger.github.io/ 
 
 ### Deployment
 GHA are set in place such that any contribution to `main` will trigger a build optimized for production deployments (which is committed to `gh-pages`) and what then GitHub hosts
