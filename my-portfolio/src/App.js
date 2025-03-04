@@ -7,21 +7,31 @@ import ExperienceSection from './components/ExperienceSection';
 function App() {
   // Define the data for Skills and Experiences
   const skills = {
-    "Programming Languages": ["Java", "Python", "C", "JavaScript", "JQuery"],
-    "Backends & Databases": ["SQL", "Postgres", "MySQL", "Docker", "Dari", "Django", "SpringBoot",],
-    "Tools": ["GitHub", "Agile", "Jira"]
+    "Programming Languages": ["Java", "Python", "C", "JavaScript", "TypeScript", "JQuery"],
+    "Backends & Databases": ["Django", "Spring Boot", "Node.js", "SQL", "PostgreSQL", "MySQL", "Dari", "MongoDB", "Redis"],
+    "Cloud & DevOps": ["AWS (EC2, S3, Lambda)", "Kubernetes", "Docker", "CI/CD Pipelines", "Terraform"],
+    "Frontend Technologies": ["React", "HTML", "CSS", "Next.js"],
+    "Testing & Automation": ["Selenium", "JUnit", "PyTest"],
+    "Tools & Methodologies": ["GitHub", "Git", "Agile", "Scrum", "Jira"],
+    "Soft Skills": ["Leadership", "Mentorship", "Technical Communication", "Problem-Solving", "Cross-Team Collaboration"]
   };
 
   const experiences = {
     "Work Experience": [
       {
-        title: 'Software Engineer II',
+        title: 'Senior Software Engineer',
         company: 'Brightspot',
-        duration: '2 years',
+        duration: 'January 2022 - Present',
         logo: `brightspot_logo.webp`,
         description: [
-          'Managed end-to-end software development lifecycle.',
-          'Contributed to all phases of the software development process.'
+          "Led backend architecture and development for enterprise CMS solutions, driving a 32% YoY increase in live sites (132 total in 2024)",
+          "Refactored and modernized legacy codebases, reducing technical debt and improving platform scalability for Amazon teams",
+          "Architected and deployed solutions contributing to $2.9M in 2024 ARR (19% increase YoY) and $3.5M in services revenue (9% increase YoY)",
+          "Enhanced API integrations to align with customer needs for analytics, SEO tools, and content automation, increasing feature adoption and engagement",
+          "Collaborated with team leads to improve workflow automation in Jira, achieving a 25% increase in ticket processing efficiency and reducing manual workload",
+          "Supported Amazon's content centralization initiative, streamlining collaboration across Amazon Transportation, Prime Video, AWS, and other teams",
+          "Mentored junior engineers and onboarded new hires, enhancing development efficiency and ensuring high project success rates",
+          "Led front-end flexibility initiatives to enhance CMS usability, positioning Brightspot as a strong competitor against Adobe, Webflow, and Amazon's in-house CMS (Lego)"
         ]
       },
       {
@@ -30,29 +40,36 @@ function App() {
         duration: '3 years',
         logo: `vs_logo_lg-centered.png`,
         description: [
-          'Design and develop new functionality with RESTful API calls and object-oriented programming in Django according to priorities with the most important features',
-          'Maintained legacy code, refactored common customer uses, and optimized queries for a more seamless user experience',
-          'Pursued a self-explanatory user interface in functional design sessions',
-          'Guaranteeing common functionality with continuous improvement of an end-to-end testing framework using selenium, including reports, parallel and distributed functionality, and more'
+          'Designed and developed new features using Django, implementing RESTful API calls and object-oriented programming to enhance core product functionality',
+          'Refactored and rebuilt legacy functionality using the Django framework, improving system maintainability, scalability, and performance',
+          'Optimized database queries and modernized data access patterns, reducing load times by 60% and enhancing efficiency',
+          'Led functional design sessions to create a self-explanatory user interface, enhancing usability and customer experience',
+          'Developed and maintained an automated end-to-end testing framework with Selenium, improving test coverage and ensuring reliability across parallel and distributed environments'
         ]
       },
     ],
     "Education": [
       {
-        title: 'Master in Business Administration',
+        title: 'Master in Business Administration (MBA)',
         company: 'The Master\'s University',
         duration: 'Graduated 2023',
         logo: 'MastersU_Seal.png',
         description: [
-          'Gained a foundation in business practice'
+          'Coursework in Leadership, Operations Management, Corporate Finance, Marketing Strategy, IT Management',
+          'Developed team leadership, strategic decision-making, and business acumen to enhance software development and project management',
+          'Gained expertise in managing cross-functional teams, optimizing workflows, and aligning technical projects with business objectives'
         ]
       },
       {
-        title: 'Bachelor of Science in Computer Science',
+        title: 'Bachelor of Science in Computer Science, Minor in Mathematics',
         company: 'James Madison University',
         duration: 'Graduated 2017',
         logo: 'JMU-block-RGB-purple-square.png',
         description: [
+          'Coursework in Software Engineering, Database Design, Algorithms & Data Structures, Parallel & Distributed Systems, Embedded Systems',
+          'Gained expertise in software architecture, programming languages, and database management',
+          'Developed skills in autonomous robotics, computer systems, and algorithm optimization',
+          'Applied mathematical foundations (Calculus, Linear Algebra, Discrete Structures) to problem-solving in software development'
         ]
       },
     ],
@@ -63,9 +80,10 @@ function App() {
         duration: '2011 - 2020',
         logo: 'crosslink-logo.png',
         description: [
-          'Prepare, and direct presentations and cameras live with songs and sermons',
-          'On-the-spot troubleshoot software and hardware problems that arise for a seamless event',
-          'Work as part of a team each week to maintain, produce, and teach the service'
+          "Provided real-time troubleshooting for software and hardware issues, ensuring seamless live events and broadcasts",
+          "Collaborated with a media production team to operate and maintain audio-visual equipment for weekly services",
+          "Directed and managed live presentations, camera operations, and visual content for worship sessions and sermons",
+          "Trained and mentored new volunteers in media operations, improving overall team efficiency and production quality"
         ]
       },
     ]
