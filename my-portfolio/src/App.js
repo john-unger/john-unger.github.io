@@ -7,13 +7,13 @@ import ExperienceSection from './components/ExperienceSection';
 function App() {
   // Define the data for Skills and Experiences
   const skills = {
+    "Soft Skills": ["Leadership", "Problem-Solving", "Mentorship", "Technical Communication", "Cross-Team Collaboration"],
     "Programming Languages": ["Java", "Python", "C", "JavaScript", "TypeScript", "JQuery"],
     "Backends & Databases": ["Django", "Spring Boot", "Node.js", "SQL", "PostgreSQL", "MySQL", "Dari", "MongoDB", "Redis"],
     "Cloud & DevOps": ["AWS (EC2, S3, Lambda)", "Kubernetes", "Docker", "CI/CD Pipelines", "Terraform"],
     "Frontend Technologies": ["React", "HTML", "CSS", "Next.js"],
     "Testing & Automation": ["Selenium", "JUnit", "PyTest"],
-    "Tools & Methodologies": ["GitHub", "Git", "Agile", "Scrum", "Jira"],
-    "Soft Skills": ["Leadership", "Mentorship", "Technical Communication", "Problem-Solving", "Cross-Team Collaboration"]
+    "Tools & Methodologies": ["GitHub", "Git", "Agile", "Scrum", "Jira"]
   };
 
   const experiences = {
