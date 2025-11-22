@@ -30,6 +30,13 @@ function AboutMe({ summary }) {
                     <div className="mt-8 flex justify-start">
                         <ConnectModal />
                     </div>
+                    <a
+                      href="/John-Unger-Resume.pdf"
+                      download
+                      className="btn btn-secondary btn-sm"
+                    >
+                      Download Résumé
+                    </a>
 
                 </div>
             </div>
