@@ -5,15 +5,39 @@ import Skills from './components/Skills';
 import ExperienceSection from './components/ExperienceSection';
 
 function App() {
-  // Define the data for Skills and Experiences
+
+  const summary = [
+    "I care about software that serves people. I am a backend-focused software engineer who designs scalable services, sets reusable standards, and grows teams.",
+    "With 7+ years of experience in distributed systems and a B.S. in Computer Science + MBA, I connect architecture decisions to business outcomes.",
+    "I thrive in collaborative environments, share knowledge freely, and continually refine systems—and teams—to raise the bar."
+  ];
+
   const skills = {
-    "Soft Skills": ["Leadership", "Problem-Solving", "Mentorship", "Technical Communication", "Cross-Team Collaboration"],
-    "Programming Languages": ["Java", "Python", "C", "JavaScript", "TypeScript", "JQuery"],
-    "Backends & Databases": ["Django", "Spring Boot", "Node.js", "SQL", "PostgreSQL", "MySQL", "Dari", "MongoDB", "Redis"],
-    "Cloud & DevOps": ["AWS (EC2, S3, Lambda)", "Kubernetes", "Docker", "CI/CD Pipelines", "Terraform"],
-    "Frontend Technologies": ["React", "HTML", "CSS", "Next.js"],
-    "Testing & Automation": ["Selenium", "JUnit", "PyTest"],
-    "Tools & Methodologies": ["GitHub", "Git", "Agile", "Scrum", "Jira"]
+    "Soft Skills": [
+      "Leadership", "Problem-Solving", "Mentorship", "Technical Communication",
+      "Cross-Team Collaboration", "API Governance", "Reliability & Observability"
+    ],
+    "Programming Languages": [
+      "Java", "Python", "Kotlin", "C", "JavaScript", "TypeScript", "SQL", "JQuery"
+    ],
+    "Backends & Databases": [
+      "Django", "Spring Boot", "Node.js", "GraphQL", "Brightspot/Dari",
+      "SQL", "PostgreSQL", "MySQL", "MongoDB", "Redis"
+    ],
+    "Cloud & DevOps": [
+      "AWS (EC2, S3, Lambda, Translate)", "Kubernetes", "Docker",
+      "CI/CD Pipelines", "GitHub Actions", "Terraform"
+    ],
+    "Frontend Technologies": [
+      "React", "HTML", "CSS", "Next.js"
+    ],
+    "Testing & Automation": [
+      "Selenium", "JUnit", "PyTest"
+    ],
+    "Tools & Methodologies": [
+      "GitHub", "Git", "Agile", "Scrum", "Jira",
+      "Release Engineering", "Data Ingestion/ETL", "Caching Strategies"
+    ]
   };
 
   const experiences = {
@@ -21,32 +45,75 @@ function App() {
       {
         title: 'Senior Software Engineer',
         company: 'Brightspot',
-        duration: 'January 2022 - Present',
+        duration: 'January 2022 - November 2025 · Remote',
         logo: `brightspot_logo.webp`,
         description: [
-          "Led backend architecture and development for enterprise CMS solutions, driving a 32% YoY increase in live sites (132 total in 2024)",
-          "Refactored and modernized legacy codebases, reducing technical debt and improving platform scalability for Amazon teams",
-          "Architected and deployed solutions contributing to $2.9M in 2024 ARR (19% increase YoY) and $3.5M in services revenue (9% increase YoY)",
-          "Enhanced API integrations to align with customer needs for analytics, SEO tools, and content automation, increasing feature adoption and engagement",
-          "Collaborated with team leads to improve workflow automation in Jira, achieving a 25% increase in ticket processing efficiency and reducing manual workload",
-          "Supported Amazon's content centralization initiative, streamlining collaboration across Amazon Transportation, Prime Video, AWS, and other teams",
-          "Mentored junior engineers and onboarded new hires, enhancing development efficiency and ensuring high project success rates",
-          "Led front-end flexibility initiatives to enhance CMS usability, positioning Brightspot as a strong competitor against Adobe, Webflow, and Amazon's in-house CMS (Lego)"
+          "Shape backend architecture and API conventions across the Amazon program (6+ concurrent projects), with standards adopted across Shipping & Freight, Jobs, and Design teams.",
+          "Lead CMS backend delivery across ~40 custom projects powering 132 live sites in 2024 (+32% YoY), supporting $2.9M ARR (+19%) and $3.5M services revenue (+9%).",
+          "Serve as lead backend engineer for Amazon Jobs and Griffin Media; primary contributor for Amazon Science, Amazon About, Buy with Prime, and other Amazon properties.",
+          "Improve reliability & DevEx through release automation, UAT workflows, GraphQL schema warm-ups, and elimination of org-wide build failures.",
+          "Automated Jira workflows improving ticket throughput by 25% and reducing manual QA processes.",
+          "Refactor legacy systems to reduce technical debt, improve scalability, and raise bar on monitoring/observability.",
+          "Mentor engineers and interns — including delivery of fully intern-driven features to prod.",
+          "Document standards and templates so repeatable features ship in hours, not days."
         ]
       },
       {
         title: 'Application Programmer',
         company: 'Vistashare LLC',
-        duration: '3 years',
+        duration: '2018 – 2021 · Harrisonburg, VA',
         logo: `vs_logo_lg-centered.png`,
         description: [
-          'Designed and developed new features using Django, implementing RESTful API calls and object-oriented programming to enhance core product functionality',
-          'Refactored and rebuilt legacy functionality using the Django framework, improving system maintainability, scalability, and performance',
-          'Optimized database queries and modernized data access patterns, reducing load times by 60% and enhancing efficiency',
-          'Led functional design sessions to create a self-explanatory user interface, enhancing usability and customer experience',
-          'Developed and maintained an automated end-to-end testing framework with Selenium, improving test coverage and ensuring reliability across parallel and distributed environments'
+          "Designed and developed new product features using Django and RESTful APIs.",
+          "Refactored legacy flows to improve maintainability and performance, reducing load times by 60%.",
+          "Led functional design sessions to improve UI clarity and customer experience.",
+          "Built automated end-to-end test coverage using Selenium across distributed environments."
         ]
       },
+    ],
+    "Selected Projects": [
+      {
+        title: 'Amazon Jobs – Global Careers Platform',
+        company: 'Brightspot',
+        duration: '2022 – Present',
+        logo: 'brightspot_logo.webp',
+        description: [
+          "Acted as backend tech lead (1,000+ commits).",
+          "Migrated to modern stack with improved stability and SEO parity.",
+          "Designed Ownership Group content governance model enabling flexible editorial permissions."
+        ]
+      },
+      {
+        title: 'Griffin Media – Live News Broadcast Platform',
+        company: 'Brightspot',
+        duration: '2025',
+        logo: 'brightspot_logo.webp',
+        description: [
+          "Delivered Weather API middleware w/ fallback provider orchestration.",
+          "Built Breaking News banner system and ViewNexa livestream rendering.",
+          "Enabled reliable election data ingestion + external rendering integrations."
+        ]
+      },
+      {
+        title: 'Amazon Science – Research Publishing Platform',
+        company: 'Brightspot',
+        duration: '2023 – 2024',
+        logo: 'brightspot_logo.webp',
+        description: [
+          "Implemented ingestion pipelines to normalize metadata into S3-backed content models.",
+          "Extended content types and GraphQL schema coverage for editorial flexibility."
+        ]
+      },
+      {
+        title: 'Amazon Buy with Prime – AI-Assisted Services',
+        company: 'Brightspot',
+        duration: '2024 – 2025',
+        logo: 'brightspot_logo.webp',
+        description: [
+          "Integrated ML-backed workflows with deterministic fallback behavior.",
+          "Improved merchant UX via guarded automation w/ safe degradation."
+        ]
+      }
     ],
     "Education": [
       {
@@ -55,23 +122,18 @@ function App() {
         duration: 'Graduated 2023',
         logo: 'MastersU_Seal.png',
         description: [
-          'Coursework in Leadership, Operations Management, Corporate Finance, Marketing Strategy, IT Management',
-          'Developed team leadership, strategic decision-making, and business acumen to enhance software development and project management',
-          'Gained expertise in managing cross-functional teams, optimizing workflows, and aligning technical projects with business objectives'
+          'Leadership, Operations Management, Corporate Finance, Marketing Strategy, IT Management'
         ]
       },
       {
-        title: 'Bachelor of Science in Computer Science, Minor in Mathematics',
+        title: 'B.S., Computer Science (Minor: Mathematics)',
         company: 'James Madison University',
         duration: 'Graduated 2017',
         logo: 'JMU-block-RGB-purple-square.png',
         description: [
-          'Coursework in Software Engineering, Database Design, Algorithms & Data Structures, Parallel & Distributed Systems, Embedded Systems',
-          'Gained expertise in software architecture, programming languages, and database management',
-          'Developed skills in autonomous robotics, computer systems, and algorithm optimization',
-          'Applied mathematical foundations (Calculus, Linear Algebra, Discrete Structures) to problem-solving in software development'
+          'Software Engineering, Database Design, Algorithms & Data Structures, Parallel & Distributed Systems'
         ]
-      },
+      }
     ],
     "Volunteering": [
       {
@@ -80,21 +142,20 @@ function App() {
         duration: '2011 - 2020',
         logo: 'crosslink-logo.png',
         description: [
-          "Provided real-time troubleshooting for software and hardware issues, ensuring seamless live events and broadcasts",
-          "Collaborated with a media production team to operate and maintain audio-visual equipment for weekly services",
-          "Directed and managed live presentations, camera operations, and visual content for worship sessions and sermons",
-          "Trained and mentored new volunteers in media operations, improving overall team efficiency and production quality"
+          "Troubleshot live production A/V systems, operated cameras and switching equipment.",
+          "Directed live content and mentored new volunteers."
         ]
-      },
+      }
     ]
   };
 
   return (
     <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12 bg-base-200 text-base-content">
 
-      <AboutMe />
+      <AboutMe summary={summary} />
 
       <Skills skills={skills} />
+
       {Object.keys(experiences).map((sectionTitle) => (
         <ExperienceSection key={sectionTitle} title={sectionTitle} experiences={experiences[sectionTitle]} />
       ))}

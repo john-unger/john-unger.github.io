@@ -1,7 +1,7 @@
 import React from 'react';
 import imagePath from './Utils';
 
-function AboutMe() {
+function AboutMe({ summary }) {
     return (
         <header className="mb-12">
             <div className="block md:flex md:items-center justify-center gap-8 text-center md:text-left">
@@ -15,11 +15,25 @@ function AboutMe() {
                 </div>
                 <div>
                     <h1 className="hidden md:block text-5xl font-bold mb-4">John Unger</h1>
-                    <p className="text-xl leading-relaxed">
-                        I am driven by a deep passion for stewarding technology to serve and empower people, ensuring that software is not just functional but truly impactful. With over six years of experience in software development, I specialize in architecting scalable backend systems, optimizing performance, and enhancing user experiences. <br />
-                        My background in Computer Science (B.S.) and Business Administration (MBA) uniquely equips me to bridge the gap between technical excellence and strategic vision. Whether refactoring legacy code, designing robust APIs, or mentoring engineers, I approach each challenge with creativity, precision, and a relentless pursuit of improvement. <br />
-                        I thrive in collaborative environments, enjoy sharing knowledge, and take pride in helping teams achieve their goals through technology.
-                    </p>
+                    <div className="text-xl leading-relaxed space-y-4">
+                        {(summary && summary.length > 0) ? (
+                            summary.map((paragraph, idx) => (
+                                <p key={idx}>{paragraph}</p>
+                            ))
+                        ) : (
+                            <>
+                                <p>
+                                    I am driven by a deep passion for stewarding technology to serve and empower people, ensuring that software is not just functional but truly impactful. With over six years of experience in software development, I specialize in architecting scalable backend systems, optimizing performance, and enhancing user experiences.
+                                </p>
+                                <p>
+                                    My background in Computer Science (B.S.) and Business Administration (MBA) uniquely equips me to bridge the gap between technical excellence and strategic vision. Whether refactoring legacy code, designing robust APIs, or mentoring engineers, I approach each challenge with creativity, precision, and a relentless pursuit of improvement.
+                                </p>
+                                <p>
+                                    I thrive in collaborative environments, enjoy sharing knowledge, and take pride in helping teams achieve their goals through technology.
+                                </p>
+                            </>
+                        )}
+                    </div>
                 </div>
             </div>
         </header>
