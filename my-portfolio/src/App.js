@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
-import Skills from './components/Skills';
 import ExperienceSection from './components/ExperienceSection';
+import FloatingConnectBar from './components/FloatingConnectBar';
+import Skills from './components/Skills';
 
 function App() {
 
@@ -159,6 +160,7 @@ function App() {
       {Object.keys(experiences).map((sectionTitle) => (
         <ExperienceSection key={sectionTitle} title={sectionTitle} experiences={experiences[sectionTitle]} />
       ))}
+      <FloatingConnectBar />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import imagePath from './Utils';
-import LinkedInBadge from './LinkedInBadge';
+import ConnectModal from './ConnectModal';
 
 function AboutMe({ summary }) {
     return (
@@ -27,23 +27,8 @@ function AboutMe({ summary }) {
                         )}
                     </div>
 
-                    {/* Contact / Social */}
-                    <div className="flex flex-col items-center md:items-start gap-4">
-                        {/* LinkedIn Badge */}
-                        <LinkedInBadge />
-
-                        {/* GitHub */}
-                        <div className="flex gap-4 mt-2">
-                            <a
-                                href="https://github.com/john-unger"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-outline btn-sm"
-                                aria-label="GitHub Profile"
-                            >
-                                <span className="font-medium">GitHub</span>
-                            </a>
-                        </div>
+                    <div className="mt-8 flex justify-start">
+                        <ConnectModal />
                     </div>
 
                 </div>
