@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaSun, FaMoon } from 'react-icons/fa';
 
 function FloatingConnectBar() {
     const [visible, setVisible] = useState(false);
@@ -54,6 +54,17 @@ function FloatingConnectBar() {
                     <FaGithub />
                 </a>
             </div>
+            <label className="swap swap-rotate cursor-pointer text-xl">
+                <input type="checkbox" onChange={(e) =>
+                    document.documentElement.setAttribute(
+                    "data-theme",
+                    e.target.checked ? "dark" : "light"
+                    )
+                    }
+                />
+                <FaSun className="swap-off text-yellow-400" />
+                <FaMoon className="swap-on text-blue-400" />
+                </label>
         </div>
     );
 }
