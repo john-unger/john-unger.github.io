@@ -12,6 +12,17 @@ function FloatingConnectBar() {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+    useEffect(() => {
+        const saved = localStorage.getItem("theme") || "dim";
+        document.documentElement.setAttribute("data-theme", saved);
+    }, []);
+
+    const toggleTheme = (checked) => {
+        const theme = checked ? "silk" : "dim";
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+    };
+
     return (
         <div
             className={`fixed z-50 transition-all duration-300
@@ -58,7 +69,7 @@ function FloatingConnectBar() {
                 <input type="checkbox" onChange={(e) =>
                     document.documentElement.setAttribute(
                     "data-theme",
-                    e.target.checked ? "dark" : "light"
+                    e.target.checked ? "silk" : "dim"
                     )
                     }
                 />
