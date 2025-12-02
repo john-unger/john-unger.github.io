@@ -9,7 +9,7 @@ function AboutMe({ summary }) {
     return (
         <header className="mb-12">
             <div className="block md:flex md:items-center justify-center gap-8 text-center md:text-left">
-                
+
                 <div className="avatar">
                     <div className="w-40 rounded-xl">
                         <img src={imagePath("profile-picture.webp")} alt="profile pic of John Unger" />
@@ -49,7 +49,7 @@ function AboutMe({ summary }) {
                             target="_blank"
                             rel="noopener noreferrer">Download Resume</a>
                     </div>
-                    
+
 
                 </div>
             </div>

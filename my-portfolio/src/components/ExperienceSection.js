@@ -4,7 +4,7 @@ import useReveal from "../hooks/useReveal";
 
 function ExperienceSection({ title, experiences }) {
   useReveal();
-  
+
   return (
     <section className="mb-12 reveal">
       <h2 className="text-2xl font-bold mb-4">{title}</h2>

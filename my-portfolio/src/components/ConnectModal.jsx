@@ -30,7 +30,7 @@ function ConnectModal() {
             {/* Modal */}
             <dialog id="connect_modal" className="modal modal-bottom sm:modal-middle">
                 <form method="dialog" className="modal-box animate-fade-in shadow-2xl">
-                    
+
                     <h3 className="font-bold text-xl text-center mb-6">
                         Connect with Me
                     </h3>

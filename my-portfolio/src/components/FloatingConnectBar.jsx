@@ -30,10 +30,10 @@ function FloatingConnectBar() {
                         right-4 bottom-4 md:right-4 md:bottom-4
                         left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0`}
         >
-            <div className="bg-base-100 shadow-xl rounded-full flex gap-4 px-5 py-3 
+            <div className="bg-base-100 shadow-xl rounded-full flex gap-4 px-5 py-3
                             items-center border border-base-300
                             transition-all duration-200 hover:shadow-2xl">
-                
+
                 {/* Main CTA */}
                 <button
                     className="btn btn-primary btn-sm rounded-full shadow-md hover:shadow-xl transition-all"
