@@ -59,7 +59,7 @@ function AboutMe({ summary }) {
           <div className="flex flex-row gap-4 mt-6 justify-center">
             <ConnectModal />
             <a
-              href="/John_Unger_Resume.pdf"
+              href="/John-Unger-Resume.pdf"
               className="btn btn-outline btn-primary"
               target="_blank"
               rel="noopener noreferrer"
