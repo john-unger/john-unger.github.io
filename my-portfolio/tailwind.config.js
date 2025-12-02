@@ -30,7 +30,7 @@ module.exports = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ["silk", "dim"],
+    themes: ["emerald", "dim"],
   },
 }
 
