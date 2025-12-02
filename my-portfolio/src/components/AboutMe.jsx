@@ -63,6 +63,7 @@ function AboutMe({ summary }) {
               className="btn btn-outline btn-primary"
               target="_blank"
               rel="noopener noreferrer"
+              download
             >
               Download Resume
             </a>
